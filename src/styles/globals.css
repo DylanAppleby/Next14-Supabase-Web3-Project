@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply m-0 p-0;
+}
+
+#__next {
+  @apply flex h-screen w-screen flex-col items-center space-y-4 overflow-hidden bg-lightGray p-4 pb-0 antialiased outline-none;
+}
+
+@layer base {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
